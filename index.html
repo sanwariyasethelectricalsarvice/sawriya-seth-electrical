@@ -110,12 +110,12 @@
                     <a href="#faq" class="hover:text-brand-gold transition" data-i18n="nav_faq">FAQ</a>
                 </nav>
 
-             <!-- 🌐 HINDI / ENGLISH TOGGLE BUTTON -->
-<div style="display: inline-flex; align-items: center; background: #0f172a; border: 2px solid #f59e0b; border-radius: 9999px; padding: 3px; z-index: 999; position: relative;">
-    <button type="button" onclick="setLanguage('hi')" id="langBtnHi" style="padding: 5px 12px; border-radius: 9999px; font-size: 12px; font-weight: 800; cursor: pointer; border: none; background: #f59e0b; color: #000; transition: all 0.2s;">
-        🇮🇳 हिन्दी
+<!-- 🌐 HINDI / ENGLISH TOGGLE BUTTON -->
+<div class="inline-flex items-center bg-slate-900 border-2 border-amber-500 rounded-full p-1 z-50 relative">
+    <button type="button" id="langBtnHi" class="px-3 py-1 rounded-full text-xs font-extrabold bg-amber-500 text-slate-950 cursor-pointer">
+        हिन्दी
     </button>
-    <button type="button" onclick="setLanguage('en')" id="langBtnEn" style="padding: 5px 12px; border-radius: 9999px; font-size: 12px; font-weight: 800; cursor: pointer; border: none; background: transparent; color: #94a3b8; transition: all 0.2s;">
+    <button type="button" id="langBtnEn" class="px-3 py-1 rounded-full text-xs font-extrabold text-slate-400 hover:text-white cursor-pointer">
         English
     </button>
 </div>
@@ -1075,5 +1075,112 @@
             window.open(`https://wa.me/917878515939?text=${waText}`, '_blank');
         }
     </script>
+    <script>
+// Translation Data
+const langData = {
+    hi: {
+        top_emergency: "⚡ 24/7 आपातकालीन इलेक्ट्रिकल व होम सर्विस:",
+        top_location: "राजस्थान में तुरंत साइट विजिट उपलब्ध",
+        tagline_sub: "घर व ऑफिस का संपूर्ण समाधान",
+        nav_home: "होम",
+        nav_about: "सुनील राव के बारे में",
+        nav_services: "सभी सेवाएं (15+)",
+        nav_posters: "3 आधिकारिक पोस्टर्स",
+        nav_calc: "खर्च कैलकुलेटर",
+        nav_why: "हमें क्यों चुनें",
+        nav_faq: "अक्सर पूछे जाने वाले सवाल",
+        btn_book_service: "सर्विस बुक करें",
+        hero_badge: "⚡ 10+ साल का अनुभव - इलेक्ट्रिकल व होम फिटिंग",
+        hero_title_1: "पावरिंग योर वर्ल्ड,",
+        hero_title_2: "ब्राइटनिंग योर लाइफ",
+        hero_desc: "सांवरिया सेठ इलेक्ट्रिकल सर्विस (सुनील राव) में आपका स्वागत है। आपके घर, दुकान, गोदाम और ऑफिस के लिए सिंगल/थ्री फेज वायरिंग, प्रोफाइल लाइट्स, इन्वर्टर, अर्थिंग, एसी पाइपिंग, आरओ, चिमनी और प्लंबर फिटिंग का सुरक्षित व भरोसेमंद समाधान।",
+        chip_safe: "सुरक्षित कार्य",
+        chip_safe_sub: "100% टेस्टेड",
+        chip_quality: "उत्कृष्ट क्वालिटी",
+        chip_quality_sub: "ISI प्रमाणित",
+        chip_ontime: "समय पर कार्य",
+        chip_ontime_sub: "फास्ट सर्विस",
+        chip_support: "सपोर्ट व वारंटी",
+        chip_support_sub: "भरोसेमंद",
+        btn_call_now: "कॉल करें: 7878515939",
+        btn_whatsapp_booking: "व्हाट्सएप बुकिंग",
+        gallery_tag: "आधिकारिक बिजनेस आर्टवर्क",
+        gallery_sub: "सांवरिया सेठ इलेक्ट्रिकल सर्विस के सभी 3 आधिकारिक पोस्टर्स यहाँ फुल रेजोल्यूशन में देखें।",
+        btn_view_full: "बड़ा पोस्टर देखें",
+        btn_inquire_wa: "व्हाट्सएप पर पूछताछ करें",
+        services_tag: "सम्पूर्ण सेवा सूची",
+        services_subtitle: "घर, दुकान या गोदाम के लिए सभी आवश्यक फिटिंग व रिपेयर सेवाएं।",
+        btn_book_wa: "व्हाट्सएप पर बुक करें"
+    },
+    en: {
+        top_emergency: "⚡ 24/7 EMERGENCY ELECTRICAL & HOME SERVICE:",
+        top_location: "Instant Site Visit Available in Rajasthan",
+        tagline_sub: "ONE STOP HOME & OFFICE SOLUTIONS",
+        nav_home: "Home",
+        nav_about: "About Sunil Rav",
+        nav_services: "Services (15+)",
+        nav_posters: "3 Official Posters",
+        nav_calc: "Cost Estimator",
+        nav_why: "Why Choose Us",
+        nav_faq: "FAQ",
+        btn_book_service: "Book Service",
+        hero_badge: "⚡ 10+ YEARS EXPERIENCE IN ELECTRICAL & HOME FITTINGS",
+        hero_title_1: "POWERING YOUR WORLD,",
+        hero_title_2: "BRIGHTENING YOUR LIFE",
+        hero_desc: "Welcome to Savriya Seth Electrical Service by Sunil Rav. Safe and reliable one-stop solutions for complete electrical wiring, profile lights, inverter, earthing, AC piping, RO, chimney and plumbing fittings.",
+        chip_safe: "Safe & Secure",
+        chip_safe_sub: "100% Tested",
+        chip_quality: "Best Quality",
+        chip_quality_sub: "ISI Materials",
+        chip_ontime: "On-Time Work",
+        chip_ontime_sub: "Fast Execution",
+        chip_support: "After Support",
+        chip_support_sub: "Work Warranty",
+        btn_call_now: "Call Now: 7878515939",
+        btn_whatsapp_booking: "WhatsApp Booking",
+        gallery_tag: "Official Business Artwork",
+        gallery_sub: "View all 3 official posters of Savriya Seth Electrical Service in full resolution.",
+        btn_view_full: "View Full Poster",
+        btn_inquire_wa: "Inquire on WhatsApp",
+        services_tag: "Complete Catalogue",
+        services_subtitle: "All essential electrical, lighting, appliances & plumbing services for home and commercial projects.",
+        btn_book_wa: "Book on WhatsApp"
+    }
+};
+
+function changeLanguage(lang) {
+    const btnHi = document.getElementById('langBtnHi');
+    const btnEn = document.getElementById('langBtnEn');
+
+    if (lang === 'hi') {
+        btnHi.className = 'px-3 py-1 rounded-full text-xs font-extrabold bg-amber-500 text-slate-950 cursor-pointer';
+        btnEn.className = 'px-3 py-1 rounded-full text-xs font-extrabold text-slate-400 hover:text-white cursor-pointer';
+    } else {
+        btnEn.className = 'px-3 py-1 rounded-full text-xs font-extrabold bg-amber-500 text-slate-950 cursor-pointer';
+        btnHi.className = 'px-3 py-1 rounded-full text-xs font-extrabold text-slate-400 hover:text-white cursor-pointer';
+    }
+
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (langData[lang] && langData[lang][key]) {
+            el.innerText = langData[lang][key];
+        }
+    });
+
+    localStorage.setItem('savriya_lang', lang);
+}
+
+// Event Listeners for Guaranteed Touch/Click Support
+document.addEventListener('DOMContentLoaded', () => {
+    const btnHi = document.getElementById('langBtnHi');
+    const btnEn = document.getElementById('langBtnEn');
+
+    if (btnHi) btnHi.onclick = () => changeLanguage('hi');
+    if (btnEn) btnEn.onclick = () => changeLanguage('en');
+
+    const saved = localStorage.getItem('savriya_lang') || 'hi';
+    changeLanguage(saved);
+});
+</script>
 </body>
 </html>

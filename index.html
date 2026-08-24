@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Savriya Seth Electrical Service | Sunil Rav - 10+ Years Exp</title>
+    <title>Savriya Seth Electrical Service | Sunil Rav (7878515939)</title>
     
     <meta name="description" content="सांवरिया सेठ इलेक्ट्रिकल सर्विस - सुनील राव (10+ साल का अनुभव)। सिंगल/थ्री फेज वायरिंग, हाउस वायरिंग, प्रोफाइल लाइट, इन्वर्टर, अर्थिंग, एसी, आरओ, चिमनी और प्लंबर फिटिंग। कॉल: 7878515939">
     <meta name="keywords" content="Savriya Seth Electrical Service, Sunil Rav, Electrician in Rajasthan, House Wiring, Profile Light, Inverter Fitting, Earthing, AC Installation, RO Service, Plumber Fitting">
+    <meta name="author" content="Sunil Rav - Savriya Seth Electrical Service">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Savriya Seth Electrical Service | Sunil Rav">
+    <meta property="og:description" content="10+ Years Experience in Complete Electrical, Lighting, AC & Plumbing Works.">
+    <meta property="og:image" content="assets/banner.png">
 
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
@@ -17,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -32,7 +39,8 @@
                             goldLight: '#fbbf24',
                             goldDark: '#d97706',
                             electric: '#00e5ff',
-                            electricBlue: '#38bdf8'
+                            electricBlue: '#38bdf8',
+                            emerald: '#10b981'
                         }
                     },
                     fontFamily: {
@@ -47,6 +55,7 @@
             }
         }
     </script>
+
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #070d1e; color: #f1f5f9; overflow-x: hidden; }
         .gold-gradient-text { background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
@@ -78,6 +87,8 @@
     <header class="bg-brand-dark/95 backdrop-blur-md border-b border-slate-800 sticky top-9 z-40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo -->
                 <a href="#home" class="flex items-center gap-3">
                     <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-brand-goldDark to-brand-gold flex items-center justify-center text-slate-950 font-black text-2xl shadow-glow-gold">SS</div>
                     <div>
@@ -89,19 +100,19 @@
                     </div>
                 </a>
 
+                <!-- Nav Menu -->
                 <nav class="hidden xl:flex items-center gap-6 text-sm font-semibold text-slate-300">
                     <a href="#home" class="hover:text-brand-gold transition" data-i18n="nav_home">Home</a>
                     <a href="#about" class="hover:text-brand-gold transition" data-i18n="nav_about">About Sunil Rav</a>
+                    <a href="#posters" class="hover:text-brand-gold transition" data-i18n="nav_posters">3 Official Posters</a>
                     <a href="#services" class="hover:text-brand-gold transition" data-i18n="nav_services">Services (15+)</a>
-                    <a href="#posters" class="hover:text-brand-gold transition" data-i18n="nav_posters">Posters & Banner</a>
                     <a href="#calculator" class="hover:text-brand-gold transition" data-i18n="nav_calc">Cost Estimator</a>
-                    <a href="#why-us" class="hover:text-brand-gold transition" data-i18n="nav_why">Why Choose Us</a>
                     <a href="#faq" class="hover:text-brand-gold transition" data-i18n="nav_faq">FAQ</a>
                 </nav>
 
-                <!-- Language Switcher & Buttons -->
+                <!-- Language Toggle & Direct Calls -->
                 <div class="flex items-center gap-3">
-                    <!-- 🌐 Language Toggle Pill -->
+                    <!-- 🌐 BILINGUAL TOGGLE -->
                     <div class="flex items-center bg-slate-900 border border-brand-gold/40 rounded-full p-1 shadow-inner">
                         <button onclick="setLanguage('hi')" id="langBtnHi" class="px-3 py-1 rounded-full text-xs font-bold transition-all bg-brand-gold text-slate-950 shadow-sm">
                             🇮🇳 हिन्दी
@@ -112,9 +123,11 @@
                     </div>
 
                     <a href="tel:+917878515939" class="hidden sm:flex px-4 py-2 rounded-lg border border-brand-gold/40 bg-brand-gold/10 text-brand-gold font-bold text-sm items-center gap-2"><i class="fa-solid fa-phone"></i> 7878515939</a>
+                    
                     <a href="#contact" class="hidden md:flex px-5 py-2.5 rounded-lg bg-gradient-to-r from-brand-goldDark to-brand-gold text-slate-950 font-bold text-sm shadow-glow-gold hover:scale-105 transition items-center gap-2">
                         <i class="fa-solid fa-calendar-check"></i> <span data-i18n="btn_book_service">Book Service</span>
                     </a>
+
                     <button id="mobileMenuBtn" class="xl:hidden p-2 rounded-lg bg-slate-800 text-slate-200"><i class="fa-solid fa-bars text-xl"></i></button>
                 </div>
             </div>
@@ -124,8 +137,8 @@
         <div id="mobileMenu" class="hidden xl:hidden bg-brand-card border-b border-slate-700 px-6 py-4 space-y-2">
             <a href="#home" class="mobile-link block py-1 font-semibold text-slate-200 hover:text-brand-gold" data-i18n="nav_home">Home</a>
             <a href="#about" class="mobile-link block py-1 font-semibold text-slate-200 hover:text-brand-gold" data-i18n="nav_about">About Sunil Rav</a>
+            <a href="#posters" class="mobile-link block py-1 font-semibold text-slate-200 hover:text-brand-gold" data-i18n="nav_posters">3 Official Posters</a>
             <a href="#services" class="mobile-link block py-1 font-semibold text-slate-200 hover:text-brand-gold" data-i18n="nav_services">All 15 Services</a>
-            <a href="#posters" class="mobile-link block py-1 font-semibold text-slate-200 hover:text-brand-gold" data-i18n="nav_posters">Official Posters</a>
             <a href="#calculator" class="mobile-link block py-1 font-semibold text-slate-200 hover:text-brand-gold" data-i18n="nav_calc">Cost Estimator</a>
             <a href="#faq" class="mobile-link block py-1 font-semibold text-slate-200 hover:text-brand-gold" data-i18n="nav_faq">FAQ</a>
             <a href="#contact" class="mobile-link block py-1 font-semibold text-brand-gold" data-i18n="btn_book_service">Book Service</a>
@@ -133,9 +146,9 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-10 pb-20 md:pt-16 md:pb-28 relative overflow-hidden">
+    <section id="home" class="pt-10 pb-20 md:pt-16 md:pb-24 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
                 
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                     <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-gold/10 border border-brand-gold/40 text-brand-gold text-xs font-bold shadow-lg">
@@ -176,8 +189,9 @@
                         </div>
                     </div>
 
+                    <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-3">
-                        <a href="tel:+917878515939" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-brand-goldDark to-brand-gold text-slate-950 font-black shadow-glow-gold hover:scale-105 transition flex items-center justify-center gap-3">
+                        <a href="tel:+917878515939" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-brand-goldDark via-brand-gold to-yellow-400 text-slate-950 font-black shadow-glow-gold hover:scale-105 transition flex items-center justify-center gap-3">
                             <i class="fa-solid fa-phone text-lg"></i>
                             <span data-i18n="btn_call_now">Call Now: 7878515939</span>
                         </a>
@@ -188,27 +202,33 @@
                     </div>
                 </div>
 
-                <!-- Right Poster Smart Box -->
+                <!-- Hero Section: Official Image Display -->
                 <div class="lg:col-span-5 relative">
                     <div class="glass-card-premium rounded-3xl p-3 sm:p-4 border border-brand-gold/40 shadow-2xl">
                         <div class="bg-brand-navy/90 rounded-t-xl px-4 py-2 flex items-center justify-between border-b border-slate-700 mb-2">
-                            <span class="text-xs font-bold text-slate-200 font-mono">OFFICIAL POSTER</span>
+                            <span class="text-xs font-bold text-slate-200 font-mono" id="heroImageBadgeTitle">SAVRIYA SETH BANNER</span>
                             <span class="text-[11px] bg-brand-gold/20 text-brand-gold font-bold px-2 py-0.5 rounded border border-brand-gold/40">SUNIL RAV</span>
                         </div>
                         
-                        <!-- Main Poster Image with Smart Multi-Path Fallback -->
                         <div class="relative rounded-2xl overflow-hidden bg-slate-950">
                             <img id="heroMainImage" 
-                                 src="banner.jpg" 
-                                 alt="Savriya Seth Electrical Service Official Poster" 
-                                 class="w-full h-auto object-cover rounded-2xl max-h-[460px] mx-auto transition duration-500">
+                                 src="assets/banner.png" 
+                                 onerror="this.onerror=null; this.src='banner.png';"
+                                 alt="Savriya Seth Electrical Service Official Poster by Sunil Rav" 
+                                 class="w-full h-auto object-cover rounded-2xl max-h-[460px] mx-auto shadow-inner transition duration-500">
                         </div>
 
-                        <!-- Poster Selectors -->
+                        <!-- 3 Switch Buttons right on Hero -->
                         <div class="mt-3 grid grid-cols-3 gap-2 text-center text-xs">
-                            <button onclick="switchHeroPoster(0)" class="p-1.5 rounded-lg bg-slate-900 border border-brand-gold text-brand-gold font-bold">Poster 1</button>
-                            <button onclick="switchHeroPoster(1)" class="p-1.5 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 font-bold hover:border-brand-gold">Poster 2</button>
-                            <button onclick="switchHeroPoster(2)" class="p-1.5 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 font-bold hover:border-brand-gold">Poster 3</button>
+                            <button onclick="setHeroImage('assets/banner.png', 'banner.png', 'POSTER 1: MASTER BANNER', this)" class="hero-tab-btn p-2 rounded-xl bg-brand-gold text-slate-950 font-bold shadow transition">
+                                Poster 1
+                            </button>
+                            <button onclick="setHeroImage('assets/poster1.png', 'poster1.png', 'POSTER 2: SUNIL RAV SERVICE CARD', this)" class="hero-tab-btn p-2 rounded-xl bg-slate-900 border border-slate-700 text-slate-300 font-bold hover:border-brand-gold transition">
+                                Poster 2
+                            </button>
+                            <button onclick="setHeroImage('assets/poster2.png', 'poster2.png', 'POSTER 3: HOME SOLUTIONS', this)" class="hero-tab-btn p-2 rounded-xl bg-slate-900 border border-slate-700 text-slate-300 font-bold hover:border-brand-gold transition">
+                                Poster 3
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -217,7 +237,189 @@
         </div>
     </section>
 
-    <!-- Services Section (All 15 Services) -->
+    <!-- 🌟 DEDICATED 3 OFFICIAL POSTERS GALLERY SECTION 🌟 -->
+    <section id="posters" class="py-20 bg-brand-navy border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+                <span class="text-xs text-brand-gold font-bold uppercase tracking-wider px-3 py-1 rounded bg-brand-gold/10 border border-brand-gold/30" data-i18n="gallery_tag">
+                    Official Business Artwork
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-black font-outfit text-white">
+                    Official <span class="gold-gradient-text">3 Posters & Banners</span>
+                </h2>
+                <p class="text-slate-300 text-sm sm:text-base" data-i18n="gallery_sub">
+                    Savriya Seth Electrical Service ke sabhi 3 official posters yahan full resolution me dekhein.
+                </p>
+            </div>
+
+            <!-- 3 Posters Grid: Displaying All 3 Images at Once! -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Poster 1 Card -->
+                <div class="glass-card-premium rounded-3xl p-4 sm:p-5 border border-brand-gold/40 flex flex-col justify-between hover:-translate-y-2 transition-all duration-300 shadow-2xl">
+                    <div>
+                        <div class="flex items-center justify-between mb-3 px-1">
+                            <span class="text-xs font-bold text-brand-gold">POSTER 1</span>
+                            <span class="text-[10px] px-2 py-0.5 rounded bg-brand-gold/20 text-brand-goldLight border border-brand-gold/40 font-mono">Master Banner</span>
+                        </div>
+                        <div class="rounded-2xl overflow-hidden bg-slate-950 border border-slate-700/80 mb-4 group cursor-pointer" onclick="openModal('assets/banner.png', 'banner.png', 'Savriya Seth Master Banner')">
+                            <img src="assets/banner.png" 
+                                 onerror="this.onerror=null; this.src='banner.png';" 
+                                 alt="Savriya Seth Electrical Banner 1" 
+                                 class="w-full h-80 object-cover object-top rounded-2xl group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-1">Master Service Banner</h3>
+                        <p class="text-xs text-slate-300 mb-4">Sunil Rav sitting with tools & full 15 services overview.</p>
+                    </div>
+                    <div class="space-y-2">
+                        <button onclick="openModal('assets/banner.png', 'banner.png', 'Savriya Seth Master Banner')" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs border border-slate-700 transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-expand"></i> <span data-i18n="btn_view_full">View Full Poster</span>
+                        </button>
+                        <a href="https://wa.me/917878515939?text=Hello%20Sunil%20ji,%20maine%20aapka%20Banner%201%20dekha." target="_blank" class="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn_inquire_wa">Inquire on WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Poster 2 Card -->
+                <div class="glass-card-premium rounded-3xl p-4 sm:p-5 border border-brand-gold/40 flex flex-col justify-between hover:-translate-y-2 transition-all duration-300 shadow-2xl">
+                    <div>
+                        <div class="flex items-center justify-between mb-3 px-1">
+                            <span class="text-xs font-bold text-brand-electric">POSTER 2</span>
+                            <span class="text-[10px] px-2 py-0.5 rounded bg-cyan-500/20 text-brand-electric border border-brand-electric/40 font-mono">Service Catalogue</span>
+                        </div>
+                        <div class="rounded-2xl overflow-hidden bg-slate-950 border border-slate-700/80 mb-4 group cursor-pointer" onclick="openModal('assets/poster1.png', 'poster1.png', 'Savriya Seth Sunil Rav Service Card')">
+                            <img src="assets/poster1.png" 
+                                 onerror="this.onerror=null; this.src='poster1.png';" 
+                                 alt="Savriya Seth Sunil Rav Poster 2" 
+                                 class="w-full h-80 object-cover object-top rounded-2xl group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-1">Sunil Rav Service Card</h3>
+                        <p class="text-xs text-slate-300 mb-4">Complete 15 electrical & plumbing service photo grid.</p>
+                    </div>
+                    <div class="space-y-2">
+                        <button onclick="openModal('assets/poster1.png', 'poster1.png', 'Savriya Seth Sunil Rav Service Card')" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs border border-slate-700 transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-expand"></i> <span data-i18n="btn_view_full">View Full Poster</span>
+                        </button>
+                        <a href="https://wa.me/917878515939?text=Hello%20Sunil%20ji,%20maine%20aapka%20Poster%202%20dekha." target="_blank" class="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn_inquire_wa">Inquire on WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Poster 3 Card -->
+                <div class="glass-card-premium rounded-3xl p-4 sm:p-5 border border-brand-gold/40 flex flex-col justify-between hover:-translate-y-2 transition-all duration-300 shadow-2xl">
+                    <div>
+                        <div class="flex items-center justify-between mb-3 px-1">
+                            <span class="text-xs font-bold text-emerald-400">POSTER 3</span>
+                            <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 font-mono">Expert Solutions</span>
+                        </div>
+                        <div class="rounded-2xl overflow-hidden bg-slate-950 border border-slate-700/80 mb-4 group cursor-pointer" onclick="openModal('assets/poster2.png', 'poster2.png', 'Savriya Seth Home Solutions')">
+                            <img src="assets/poster2.png" 
+                                 onerror="this.onerror=null; this.src='poster2.png';" 
+                                 alt="Savriya Seth Poster 3" 
+                                 class="w-full h-80 object-cover object-top rounded-2xl group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-1">Expert Home Solutions</h3>
+                        <p class="text-xs text-slate-300 mb-4">Electrical, AC, RO, Chimney & Drainage specialist poster.</p>
+                    </div>
+                    <div class="space-y-2">
+                        <button onclick="openModal('assets/poster2.png', 'poster2.png', 'Savriya Seth Home Solutions')" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs border border-slate-700 transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-expand"></i> <span data-i18n="btn_view_full">View Full Poster</span>
+                        </button>
+                        <a href="https://wa.me/917878515939?text=Hello%20Sunil%20ji,%20maine%20aapka%20Poster%203%20dekha." target="_blank" class="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn_inquire_wa">Inquire on WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Modal for Full Screen Image Preview -->
+    <div id="imageModal" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="relative max-w-4xl w-full bg-brand-dark rounded-3xl p-4 sm:p-6 border border-brand-gold/40 shadow-2xl">
+            <div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-700">
+                <h3 class="text-lg font-bold text-white" id="modalTitle">Poster Full View</h3>
+                <button onclick="closeModal()" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-red-600 text-white font-bold flex items-center justify-center transition">✕</button>
+            </div>
+            <div class="max-h-[75vh] overflow-auto rounded-2xl flex items-center justify-center bg-slate-950 p-2">
+                <img id="modalImg" src="" alt="Full View Poster" class="max-h-[70vh] w-auto object-contain rounded-xl">
+            </div>
+            <div class="mt-4 flex items-center justify-end gap-3">
+                <button onclick="closeModal()" class="px-5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold transition">Close</button>
+                <a id="modalWaBtn" href="" target="_blank" class="px-5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Inquiry
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-brand-dark/40 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-7 space-y-5">
+                    <span class="text-xs font-bold uppercase tracking-wider text-brand-gold px-3 py-1 rounded bg-brand-gold/10 border border-brand-gold/30" data-i18n="about_tag">
+                        Master Specialist Profile
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-black font-outfit text-white">
+                        <span data-i18n="about_title_1">Meet</span> <span class="gold-gradient-text">Sunil Rav</span> — <span data-i18n="about_title_2">10+ Years Trusted Experience</span>
+                    </h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" data-i18n="about_p1">
+                        <strong>Savriya Seth Electrical Service</strong> is led by <strong>Sunil Rav</strong>, who has over 10 years of practical field experience in heavy three-phase industrial setup, complete house wiring, modern profile lighting, AC copper piping, and complete plumbing solutions.
+                    </p>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" data-i18n="about_p2">
+                        We prioritize 100% electrical safety, proper chemical earthing, overload protection with MCB/RCCB, and neat, clean finishing at highly transparent and reasonable pricing.
+                    </p>
+
+                    <div class="p-4 rounded-2xl glass-card-premium border border-brand-gold/40 flex flex-wrap items-center justify-between gap-4">
+                        <div>
+                            <div class="text-xs text-slate-400 font-bold uppercase" data-i18n="direct_contact_title">Direct Contact Master Electrician</div>
+                            <div class="text-xl font-bold text-white">Sunil Rav</div>
+                            <div class="text-xs text-brand-gold font-mono">+91 7878515939</div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <a href="tel:+917878515939" class="px-4 py-2 rounded-lg bg-brand-gold text-slate-950 font-bold text-xs hover:bg-yellow-400 transition flex items-center gap-1.5">
+                                <i class="fa-solid fa-phone"></i> <span data-i18n="btn_call">Call Now</span>
+                            </a>
+                            <a href="mailto:sanwariyasethelectricalsarvice@gmail.com" class="px-4 py-2 rounded-lg bg-slate-800 text-slate-200 font-bold text-xs hover:bg-slate-700 transition flex items-center gap-1.5">
+                                <i class="fa-solid fa-envelope"></i> Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+                    <div class="glass-card p-5 rounded-2xl border border-slate-700 text-center">
+                        <div class="text-3xl text-brand-gold mb-2"><i class="fa-solid fa-bolt-lightning"></i></div>
+                        <h4 class="font-bold text-white text-sm mb-1" data-i18n="feature_1_title">Expert Wiring</h4>
+                        <p class="text-[11px] text-slate-300" data-i18n="feature_1_desc">Single, 3-Phase & Concealed House Wiring</p>
+                    </div>
+                    <div class="glass-card p-5 rounded-2xl border border-slate-700 text-center">
+                        <div class="text-3xl text-brand-electric mb-2"><i class="fa-solid fa-lightbulb"></i></div>
+                        <h4 class="font-bold text-white text-sm mb-1" data-i18n="feature_2_title">Designer Lights</h4>
+                        <p class="text-[11px] text-slate-300" data-i18n="feature_2_desc">Profile, Rope & Motion Sensor Lights</p>
+                    </div>
+                    <div class="glass-card p-5 rounded-2xl border border-slate-700 text-center">
+                        <div class="text-3xl text-emerald-400 mb-2"><i class="fa-solid fa-snowflake"></i></div>
+                        <h4 class="font-bold text-white text-sm mb-1" data-i18n="feature_3_title">AC & Appliances</h4>
+                        <p class="text-[11px] text-slate-300" data-i18n="feature_3_desc">AC Copper Piping, RO & Chimney</p>
+                    </div>
+                    <div class="glass-card p-5 rounded-2xl border border-slate-700 text-center">
+                        <div class="text-3xl text-blue-400 mb-2"><i class="fa-solid fa-faucet-drip"></i></div>
+                        <h4 class="font-bold text-white text-sm mb-1" data-i18n="feature_4_title">Plumbing & SWR</h4>
+                        <p class="text-[11px] text-slate-300" data-i18n="feature_4_desc">PVC Drainage & Bathroom Fitting</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid (15 Services) -->
     <section id="services" class="py-20 bg-brand-dark/70">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
@@ -227,7 +429,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- 1 to 15 Service Cards -->
+                <!-- 1 -->
                 <div class="glass-card p-6 rounded-2xl border border-slate-700 flex flex-col justify-between">
                     <div>
                         <div class="text-2xl text-brand-gold mb-3"><i class="fa-solid fa-plug"></i></div>
@@ -237,6 +439,7 @@
                     <a href="https://wa.me/917878515939?text=Single%20Phase%20Wiring%20Inquiry" target="_blank" class="w-full py-2.5 rounded-xl bg-brand-gold/10 hover:bg-brand-gold text-brand-gold hover:text-slate-950 font-bold text-xs border border-brand-gold/30 text-center"><span data-i18n="btn_book_wa">Book on WhatsApp</span></a>
                 </div>
 
+                <!-- 2 -->
                 <div class="glass-card p-6 rounded-2xl border border-slate-700 flex flex-col justify-between">
                     <div>
                         <div class="text-2xl text-brand-gold mb-3"><i class="fa-solid fa-network-wired"></i></div>
@@ -246,6 +449,7 @@
                     <a href="https://wa.me/917878515939?text=Three%20Phase%20Wiring%20Inquiry" target="_blank" class="w-full py-2.5 rounded-xl bg-brand-gold/10 hover:bg-brand-gold text-brand-gold hover:text-slate-950 font-bold text-xs border border-brand-gold/30 text-center"><span data-i18n="btn_book_wa">Book on WhatsApp</span></a>
                 </div>
 
+                <!-- 3 -->
                 <div class="glass-card p-6 rounded-2xl border border-slate-700 flex flex-col justify-between">
                     <div>
                         <div class="text-2xl text-brand-gold mb-3"><i class="fa-solid fa-house-chimney-crack"></i></div>
@@ -255,6 +459,7 @@
                     <a href="https://wa.me/917878515939?text=House%20Wiring%20Inquiry" target="_blank" class="w-full py-2.5 rounded-xl bg-brand-gold/10 hover:bg-brand-gold text-brand-gold hover:text-slate-950 font-bold text-xs border border-brand-gold/30 text-center"><span data-i18n="btn_book_wa">Book on WhatsApp</span></a>
                 </div>
 
+                <!-- 4 -->
                 <div class="glass-card p-6 rounded-2xl border border-slate-700 flex flex-col justify-between">
                     <div>
                         <div class="text-2xl text-brand-electric mb-3"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
@@ -264,6 +469,7 @@
                     <a href="https://wa.me/917878515939?text=Home%20Light%20Decoration%20Inquiry" target="_blank" class="w-full py-2.5 rounded-xl bg-cyan-500/10 hover:bg-brand-electric text-brand-electric hover:text-slate-950 font-bold text-xs border border-brand-electric/30 text-center"><span data-i18n="btn_book_wa">Book on WhatsApp</span></a>
                 </div>
 
+                <!-- 5 -->
                 <div class="glass-card p-6 rounded-2xl border border-slate-700 flex flex-col justify-between">
                     <div>
                         <div class="text-2xl text-brand-electric mb-3"><i class="fa-solid fa-lightbulb"></i></div>
@@ -273,6 +479,7 @@
                     <a href="https://wa.me/917878515939?text=Profile%20and%20Sensor%20Light%20Inquiry" target="_blank" class="w-full py-2.5 rounded-xl bg-cyan-500/10 hover:bg-brand-electric text-brand-electric hover:text-slate-950 font-bold text-xs border border-brand-electric/30 text-center"><span data-i18n="btn_book_wa">Book on WhatsApp</span></a>
                 </div>
 
+                <!-- 6 -->
                 <div class="glass-card p-6 rounded-2xl border border-slate-700 flex flex-col justify-between">
                     <div>
                         <div class="text-2xl text-brand-gold mb-3"><i class="fa-solid fa-warehouse"></i></div>
@@ -282,6 +489,7 @@
                     <a href="https://wa.me/917878515939?text=Godown%20Wiring%20Inquiry" target="_blank" class="w-full py-2.5 rounded-xl bg-brand-gold/10 hover:bg-brand-gold text-brand-gold hover:text-slate-950 font-bold text-xs border border-brand-gold/30 text-center"><span data-i18n="btn_book_wa">Book on WhatsApp</span></a>
                 </div>
 
+                <!-- 7 -->
                 <div class="glass-card p-6 rounded-2xl border border-slate-700 flex flex-col justify-between">
                     <div>
                         <div class="text-2xl text-brand-gold mb-3"><i class="fa-solid fa-car-battery"></i></div>
@@ -291,6 +499,7 @@
                     <a href="https://wa.me/917878515939?text=Inverter%20Fitting%20Inquiry" target="_blank" class="w-full py-2.5 rounded-xl bg-brand-gold/10 hover:bg-brand-gold text-brand-gold hover:text-slate-950 font-bold text-xs border border-brand-gold/30 text-center"><span data-i18n="btn_book_wa">Book on WhatsApp</span></a>
                 </div>
 
+                <!-- 8 -->
                 <div class="glass-card p-6 rounded-2xl border border-slate-700 flex flex-col justify-between">
                     <div>
                         <div class="text-2xl text-brand-gold mb-3"><i class="fa-solid fa-shield-virus"></i></div>
@@ -300,6 +509,7 @@
                     <a href="https://wa.me/917878515939?text=Earthing%20Inquiry" target="_blank" class="w-full py-2.5 rounded-xl bg-brand-gold/10 hover:bg-brand-gold text-brand-gold hover:text-slate-950 font-bold text-xs border border-brand-gold/30 text-center"><span data-i18n="btn_book_wa">Book on WhatsApp</span></a>
                 </div>
 
+                <!-- 9 -->
                 <div class="glass-card p-6 rounded-2xl border border-slate-700 flex flex-col justify-between">
                     <div>
                         <div class="text-2xl text-brand-gold mb-3"><i class="fa-solid fa-screwdriver"></i></div>
@@ -309,6 +519,7 @@
                     <a href="https://wa.me/917878515939?text=Light%20Maintenance%20Inquiry" target="_blank" class="w-full py-2.5 rounded-xl bg-brand-gold/10 hover:bg-brand-gold text-brand-gold hover:text-slate-950 font-bold text-xs border border-brand-gold/30 text-center"><span data-i18n="btn_book_wa">Book on WhatsApp</span></a>
                 </div>
 
+                <!-- 10 -->
                 <div class="glass-card p-6 rounded-2xl border border-slate-700 flex flex-col justify-between">
                     <div>
                         <div class="text-2xl text-blue-400 mb-3"><i class="fa-solid fa-faucet"></i></div>
@@ -318,6 +529,7 @@
                     <a href="https://wa.me/917878515939?text=Plumber%20Fitting%20Inquiry" target="_blank" class="w-full py-2.5 rounded-xl bg-blue-500/10 hover:bg-blue-500 text-blue-400 hover:text-slate-950 font-bold text-xs border border-blue-500/30 text-center"><span data-i18n="btn_book_wa">Book on WhatsApp</span></a>
                 </div>
 
+                <!-- 11 -->
                 <div class="glass-card p-6 rounded-2xl border border-slate-700 flex flex-col justify-between">
                     <div>
                         <div class="text-2xl text-emerald-400 mb-3"><i class="fa-solid fa-ring"></i></div>
@@ -327,6 +539,7 @@
                     <a href="https://wa.me/917878515939?text=AC%20Copper%20Piping%20Inquiry" target="_blank" class="w-full py-2.5 rounded-xl bg-emerald-500/10 hover:bg-emerald-500 text-emerald-400 hover:text-slate-950 font-bold text-xs border border-emerald-500/30 text-center"><span data-i18n="btn_book_wa">Book on WhatsApp</span></a>
                 </div>
 
+                <!-- 12 -->
                 <div class="glass-card p-6 rounded-2xl border border-slate-700 flex flex-col justify-between">
                     <div>
                         <div class="text-2xl text-emerald-400 mb-3"><i class="fa-solid fa-snowflake"></i></div>
@@ -336,6 +549,7 @@
                     <a href="https://wa.me/917878515939?text=AC%20Installation%20Service%20Inquiry" target="_blank" class="w-full py-2.5 rounded-xl bg-emerald-500/10 hover:bg-emerald-500 text-emerald-400 hover:text-slate-950 font-bold text-xs border border-emerald-500/30 text-center"><span data-i18n="btn_book_wa">Book on WhatsApp</span></a>
                 </div>
 
+                <!-- 13 -->
                 <div class="glass-card p-6 rounded-2xl border border-slate-700 flex flex-col justify-between">
                     <div>
                         <div class="text-2xl text-brand-electric mb-3"><i class="fa-solid fa-bottle-water"></i></div>
@@ -345,6 +559,7 @@
                     <a href="https://wa.me/917878515939?text=RO%20Service%20Inquiry" target="_blank" class="w-full py-2.5 rounded-xl bg-cyan-500/10 hover:bg-brand-electric text-brand-electric hover:text-slate-950 font-bold text-xs border border-brand-electric/30 text-center"><span data-i18n="btn_book_wa">Book on WhatsApp</span></a>
                 </div>
 
+                <!-- 14 -->
                 <div class="glass-card p-6 rounded-2xl border border-slate-700 flex flex-col justify-between">
                     <div>
                         <div class="text-2xl text-brand-gold mb-3"><i class="fa-solid fa-fan"></i></div>
@@ -354,6 +569,7 @@
                     <a href="https://wa.me/917878515939?text=Chimney%20Service%20Inquiry" target="_blank" class="w-full py-2.5 rounded-xl bg-brand-gold/10 hover:bg-brand-gold text-brand-gold hover:text-slate-950 font-bold text-xs border border-brand-gold/30 text-center"><span data-i18n="btn_book_wa">Book on WhatsApp</span></a>
                 </div>
 
+                <!-- 15 -->
                 <div class="glass-card p-6 rounded-2xl border border-slate-700 flex flex-col justify-between">
                     <div>
                         <div class="text-2xl text-blue-400 mb-3"><i class="fa-solid fa-water"></i></div>
@@ -361,6 +577,110 @@
                         <p class="text-xs text-slate-300 mb-4" data-i18n="s15_d">Roof rain water drainage, SWR sewage pipelines & underground inspection chambers.</p>
                     </div>
                     <a href="https://wa.me/917878515939?text=PVC%20Drainage%20Fitting%20Inquiry" target="_blank" class="w-full py-2.5 rounded-xl bg-blue-500/10 hover:bg-blue-500 text-blue-400 hover:text-slate-950 font-bold text-xs border border-blue-500/30 text-center"><span data-i18n="btn_book_wa">Book on WhatsApp</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instant Cost Estimator -->
+    <section id="calculator" class="py-20 bg-brand-dark/80">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 space-y-2">
+                <span class="text-xs text-brand-gold font-bold uppercase tracking-wider px-3 py-1 rounded bg-brand-gold/10 border border-brand-gold/30" data-i18n="calc_tag">
+                    Quotation Tool
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-black font-outfit text-white">
+                    Instant Work <span class="gold-gradient-text" data-i18n="calc_title_2">Cost Estimator</span>
+                </h2>
+                <p class="text-slate-300 text-xs sm:text-sm" data-i18n="calc_sub">
+                    Select service type & size to get estimated rough pricing.
+                </p>
+            </div>
+
+            <div class="glass-card-premium p-6 sm:p-8 rounded-3xl border border-brand-gold/30 shadow-2xl">
+                <form class="space-y-6" onsubmit="return false;">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-200 uppercase mb-2" data-i18n="calc_lbl_service">Primary Service Required *</label>
+                            <select id="calcService" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:border-brand-gold focus:outline-none">
+                                <option value="house_wiring" data-base="15000">Complete House Wiring (Naya Ghar)</option>
+                                <option value="single_phase" data-base="3500">Single Phase Wiring & Repair</option>
+                                <option value="three_phase" data-base="9000">Three Phase Wiring & Panel</option>
+                                <option value="profile_lights" data-base="4500">Profile Lights & Sensor Fitting</option>
+                                <option value="ac_service" data-base="1500">AC Installation & Copper Piping</option>
+                                <option value="inverter_earthing" data-base="2500">Inverter Fitting & Earthing</option>
+                                <option value="ro_chimney" data-base="1200">RO & Chimney Installation</option>
+                                <option value="plumber_drainage" data-base="3000">Plumber & PVC Drainage Fitting</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-200 uppercase mb-2" data-i18n="calc_lbl_scope">Property Scope / Size *</label>
+                            <select id="calcScope" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:border-brand-gold focus:outline-none">
+                                <option value="1" data-mult="1.0">1 Room / Small Shop / Urgent Point</option>
+                                <option value="2" data-mult="1.8">2 BHK House / Medium Shop</option>
+                                <option value="3" data-mult="2.6" selected>3 BHK House / Kothi</option>
+                                <option value="4" data-mult="3.5">4+ BHK Villa / Large Bangalow</option>
+                                <option value="5" data-mult="4.5">Commercial Godown / Factory</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex flex-wrap items-center justify-between gap-4">
+                        <div>
+                            <div class="text-sm font-bold text-white" data-i18n="calc_mat_title">Include Premium Material & Hardware?</div>
+                            <div class="text-xs text-slate-400" data-i18n="calc_mat_desc">ISI certified copper wires, modular switch, pipes, copper tubes</div>
+                        </div>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" id="calcMaterial" class="sr-only peer">
+                            <div class="w-11 h-6 bg-slate-700 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-brand-gold"></div>
+                        </label>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-slate-950 border border-brand-gold/40 flex flex-wrap items-center justify-between gap-4">
+                        <div>
+                            <div class="text-xs font-semibold text-slate-400 uppercase" data-i18n="calc_res_title">Estimated Work Range</div>
+                            <div class="text-2xl sm:text-3xl font-black font-outfit text-brand-gold" id="estimatedPriceDisplay">₹ 35,000 - ₹ 45,000*</div>
+                            <div class="text-[10px] text-slate-500" data-i18n="calc_res_note">*Final quote will be provided after free on-site inspection.</div>
+                        </div>
+                        <button type="button" onclick="sendCalculatedQuoteToWhatsApp()" class="px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-lg flex items-center gap-2 transition hover:scale-105">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> <span data-i18n="btn_send_estimate">Send Estimate on WhatsApp</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-brand-dark/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-black font-outfit text-white">Frequently Asked <span class="gold-gradient-text">Questions</span></h2>
+            </div>
+            <div class="space-y-4">
+                <div class="glass-card rounded-2xl border border-slate-700 p-5">
+                    <h4 class="font-bold text-white text-sm sm:text-base flex items-center justify-between" data-i18n="faq_q1">
+                        1. Do you provide 24/7 emergency service in Rajasthan?
+                    </h4>
+                    <p class="text-xs sm:text-sm text-slate-300 mt-2" data-i18n="faq_a1">
+                        Yes! For short circuit, MCB tripping or urgent faults, call Sunil Rav directly at +91 7878515939.
+                    </p>
+                </div>
+                <div class="glass-card rounded-2xl border border-slate-700 p-5">
+                    <h4 class="font-bold text-white text-sm sm:text-base flex items-center justify-between" data-i18n="faq_q2">
+                        2. Can we get both material and labor or only labor?
+                    </h4>
+                    <p class="text-xs sm:text-sm text-slate-300 mt-2" data-i18n="faq_a2">
+                        We provide both options: Complete contract with ISI top brand materials or labor-only fitting.
+                    </p>
+                </div>
+                <div class="glass-card rounded-2xl border border-slate-700 p-5">
+                    <h4 class="font-bold text-white text-sm sm:text-base flex items-center justify-between" data-i18n="faq_q3">
+                        3. Do you handle AC, RO, Chimney and Plumbing along with Electrical?
+                    </h4>
+                    <p class="text-xs sm:text-sm text-slate-300 mt-2" data-i18n="faq_a3">
+                        Yes, Savriya Seth Electrical is a complete one-stop solution for all 15 services.
+                    </p>
                 </div>
             </div>
         </div>
@@ -417,7 +737,7 @@
                         <textarea id="custMsg" rows="3" placeholder="Kaam ke baare me batayein..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:border-brand-gold focus:outline-none"></textarea>
                     </div>
 
-                    <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-brand-goldDark to-brand-gold text-slate-950 font-black text-base shadow-glow-gold hover:scale-105 transition flex items-center justify-center gap-2">
+                    <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-brand-goldDark via-brand-gold to-yellow-400 text-slate-950 font-black text-base shadow-glow-gold hover:scale-105 transition flex items-center justify-center gap-2">
                         <i class="fa-brands fa-whatsapp text-xl"></i> <span data-i18n="form_btn_submit">Submit & Forward to Sunil Rav on WhatsApp</span>
                     </button>
                 </form>
@@ -435,40 +755,53 @@
     </footer>
 
     <!-- Floating WhatsApp -->
-    <a href="https://wa.me/917878515939" target="_blank" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-emerald-500 text-white shadow-2xl flex items-center justify-center text-2xl pulse-subtle hover:scale-110 transition"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="https://wa.me/917878515939" target="_blank" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-emerald-500 text-white shadow-2xl flex items-center justify-center text-2xl pulse-subtle hover:scale-110 transition" title="WhatsApp Sunil Rav">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
     <!-- Smart Scripts -->
     <script>
-        // Poster candidate sources
-        const posterSets = [
-            ["banner.jpg", "assets/banner.jpg", "poster.png", "image_d3011d.jpg"],
-            ["poster1.png", "assets/poster1.png", "banner.jpg"],
-            ["poster2.png", "assets/poster2.png", "sunil.jpg", "banner.jpg"]
-        ];
-
-        function loadSmartImage(imgElement, sourceList) {
-            let attempt = 0;
-            function tryNext() {
-                if (attempt < sourceList.length) {
-                    const nextSrc = sourceList[attempt++];
-                    imgElement.onerror = tryNext;
-                    imgElement.src = nextSrc;
-                } else {
-                    imgElement.onerror = null;
-                    imgElement.src = "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80";
-                }
-            }
-            tryNext();
-        }
-
-        function switchHeroPoster(idx) {
+        // Hero Image Switcher
+        function setHeroImage(assetPath, rootPath, title, btn) {
             const heroImg = document.getElementById('heroMainImage');
-            loadSmartImage(heroImg, posterSets[idx]);
+            const badge = document.getElementById('heroImageBadgeTitle');
+            if (badge) badge.innerText = title;
+            
+            heroImg.onerror = function() {
+                this.onerror = null;
+                this.src = rootPath;
+            };
+            heroImg.src = assetPath;
+
+            document.querySelectorAll('.hero-tab-btn').forEach(b => {
+                b.className = 'hero-tab-btn p-2 rounded-xl bg-slate-900 border border-slate-700 text-slate-300 font-bold hover:border-brand-gold transition';
+            });
+            if (btn) {
+                btn.className = 'hero-tab-btn p-2 rounded-xl bg-brand-gold text-slate-950 font-bold shadow transition';
+            }
         }
 
-        window.addEventListener('DOMContentLoaded', () => {
-            switchHeroPoster(0);
-        });
+        // Modal for Full View
+        function openModal(assetPath, rootPath, title) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImg');
+            const modalTitle = document.getElementById('modalTitle');
+            const waBtn = document.getElementById('modalWaBtn');
+            
+            modalTitle.innerText = title;
+            modalImg.onerror = function() {
+                this.onerror = null;
+                this.src = rootPath;
+            };
+            modalImg.src = assetPath;
+            waBtn.href = `https://wa.me/917878515939?text=Hello%20Sunil%20ji,%20I%20am%20inquiring%20about%20${encodeURIComponent(title)}.`;
+            
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').classList.add('hidden');
+        }
 
         // BILINGUAL TRANSLATIONS
         const translations = {
@@ -479,7 +812,7 @@
                 nav_home: "होम",
                 nav_about: "सुनील राव के बारे में",
                 nav_services: "सभी सेवाएं (15+)",
-                nav_posters: "पोस्टर्स व बैनर",
+                nav_posters: "3 आधिकारिक पोस्टर्स",
                 nav_calc: "खर्च कैलकुलेटर",
                 nav_why: "हमें क्यों चुनें",
                 nav_faq: "अक्सर पूछे जाने वाले सवाल",
@@ -498,9 +831,44 @@
                 chip_support_sub: "भरोसेमंद",
                 btn_call_now: "कॉल करें: 7878515939",
                 btn_whatsapp_booking: "व्हाट्सएप बुकिंग",
+                gallery_tag: "आधिकारिक बिजनेस आर्टवर्क",
+                gallery_sub: "सांवरिया सेठ इलेक्ट्रिकल सर्विस के सभी 3 आधिकारिक पोस्टर्स यहाँ फुल रेजोल्यूशन में देखें।",
+                btn_view_full: "बड़ा पोस्टर देखें",
+                btn_inquire_wa: "व्हाट्सएप पर पूछताछ करें",
+                about_tag: "मुख्य विशेषज्ञ प्रोफाइल",
+                about_title_1: "मिलिए",
+                about_title_2: "10+ वर्षों का विश्वसनीय अनुभव",
+                about_p1: "सांवरिया सेठ इलेक्ट्रिकल सर्विस को सुनील राव लीड कर रहे हैं, जिनका 10 से अधिक वर्षों का फील्ड अनुभव है। वे थ्री-फेज, हाउस वायरिंग, प्रोफाइल लाइट्स, एसी पाइपिंग और प्लंबिंग के विशेषज्ञ हैं।",
+                about_p2: "हम पूर्ण सुरक्षा, केमिकल अर्थिंग, MCB ओवरलोड सुरक्षा और उच्च फिनिशिंग के साथ उचित मूल्य पर कार्य करते हैं।",
+                direct_contact_title: "डायरेक्ट संपर्क मास्टर इलेक्ट्रीशियन",
+                btn_call: "कॉल करें",
+                feature_1_title: "विशेषज्ञ वायरिंग",
+                feature_1_desc: "सिंगल, थ्री फेज व कंसील्ड हाउस वायरिंग",
+                feature_2_title: "डिजाइनर लाइट्स",
+                feature_2_desc: "प्रोफाइल, रोप व मोशन सेंसर लाइट्स",
+                feature_3_title: "एसी व उपकरण",
+                feature_3_desc: "एसी कॉपर पाइपिंग, आरओ व चिमनी",
+                feature_4_title: "प्लंबिंग व ड्रेनेज",
+                feature_4_desc: "पीवीसी ड्रेनेज व बाथरूम फिटिंग",
                 services_tag: "सम्पूर्ण सेवा सूची",
                 services_subtitle: "घर, दुकान या गोदाम के लिए सभी आवश्यक फिटिंग व रिपेयर सेवाएं।",
                 btn_book_wa: "व्हाट्सएप पर बुक करें",
+                calc_tag: "कोटेशन टूल",
+                calc_title_2: "खर्च कैलकुलेटर",
+                calc_sub: "अपनी जरूरत चुनकर अनुमानित खर्च जानें।",
+                calc_lbl_service: "आवश्यक मुख्य सर्विस *",
+                calc_lbl_scope: "प्रॉपर्टी का आकार / एरिया *",
+                calc_mat_title: "प्रीमियम मटेरियल शामिल करें?",
+                calc_mat_desc: "ISI कॉपर वायर, स्विच, पाइप व फिटिंग",
+                calc_res_title: "अनुमानित मजदूरी / कार्य राशि",
+                calc_res_note: "*अंतिम कोटेशन फ्री साइट इंस्पेक्शन के बाद दी जाएगी।",
+                btn_send_estimate: "अनुमान व्हाट्सएप पर भेजें",
+                faq_q1: "1. क्या आप राजस्थान में 24/7 इमरजेंसी सर्विस देते हैं?",
+                faq_a1: "हाँ! शॉर्ट सर्किट, MCB ट्रिपिंग या किसी भी फॉल्ट के लिए सुनील राव को सीधे 7878515939 पर कॉल करें।",
+                faq_q2: "2. क्या मटेरियल हमारा होगा या आप लाएंगे?",
+                faq_a2: "हम दोनों विकल्प देते हैं: मटेरियल सहित या केवल लेबर फिटिंग कार्य।",
+                faq_q3: "3. क्या आप इलेक्ट्रिकल के साथ एसी, आरओ और प्लंबिंग भी करते हैं?",
+                faq_a3: "हाँ, सांवरिया सेठ इलेक्ट्रिकल सर्विस सभी 15 सेवाओं का वन-स्टॉप समाधान है।",
                 form_lbl_name: "आपका नाम *",
                 form_lbl_phone: "मोबाइल नंबर *",
                 form_lbl_service: "आवश्यक सेवा *",
@@ -545,7 +913,7 @@
                 nav_home: "Home",
                 nav_about: "About Sunil Rav",
                 nav_services: "Services (15+)",
-                nav_posters: "Posters & Banner",
+                nav_posters: "3 Official Posters",
                 nav_calc: "Cost Estimator",
                 nav_why: "Why Choose Us",
                 nav_faq: "FAQ",
@@ -564,9 +932,44 @@
                 chip_support_sub: "Work Warranty",
                 btn_call_now: "Call Now: 7878515939",
                 btn_whatsapp_booking: "WhatsApp Booking",
+                gallery_tag: "Official Business Artwork",
+                gallery_sub: "View all 3 official posters of Savriya Seth Electrical Service in full resolution.",
+                btn_view_full: "View Full Poster",
+                btn_inquire_wa: "Inquire on WhatsApp",
+                about_tag: "Master Specialist Profile",
+                about_title_1: "Meet",
+                about_title_2: "10+ Years Trusted Experience",
+                about_p1: "Savriya Seth Electrical Service is led by Sunil Rav with over 10 years of practical field expertise in heavy 3-phase industrial power, complete house wiring, modern profile lights, AC copper piping and complete plumbing.",
+                about_p2: "We prioritize 100% electrical safety, proper chemical earthing, overload protection with MCB/RCCB, and neat finishing at highly transparent and reasonable pricing.",
+                direct_contact_title: "Direct Contact Master Electrician",
+                btn_call: "Call Now",
+                feature_1_title: "Expert Wiring",
+                feature_1_desc: "Single, 3-Phase & Concealed House Wiring",
+                feature_2_title: "Designer Lights",
+                feature_2_desc: "Profile, Rope & Motion Sensor Lights",
+                feature_3_title: "AC & Appliances",
+                feature_3_desc: "AC Copper Piping, RO & Chimney",
+                feature_4_title: "Plumbing & SWR",
+                feature_4_desc: "PVC Drainage & Bathroom Fitting",
                 services_tag: "Complete Catalogue",
                 services_subtitle: "All essential electrical, lighting, appliances & plumbing services for home and commercial projects.",
                 btn_book_wa: "Book on WhatsApp",
+                calc_tag: "Quotation Tool",
+                calc_title_2: "Cost Estimator",
+                calc_sub: "Select service type & property size to estimate rough costs.",
+                calc_lbl_service: "Primary Service Required *",
+                calc_lbl_scope: "Property Scope / Size *",
+                calc_mat_title: "Include Premium Material & Hardware?",
+                calc_mat_desc: "ISI copper wires, modular switch, pipes, copper tubes",
+                calc_res_title: "Estimated Work Range",
+                calc_res_note: "*Final quote will be provided after free on-site inspection.",
+                btn_send_estimate: "Send Estimate on WhatsApp",
+                faq_q1: "1. Do you provide 24/7 emergency service in Rajasthan?",
+                faq_a1: "Yes! For short circuits, MCB tripping or urgent faults, call Sunil Rav directly at +91 7878515939.",
+                faq_q2: "2. Can we get both material and labor or only labor?",
+                faq_a2: "We provide both options: Complete contract with ISI top brand materials or labor-only fitting.",
+                faq_q3: "3. Do you handle AC, RO, Chimney and Plumbing along with Electrical?",
+                faq_a3: "Yes, Savriya Seth Electrical is a complete one-stop solution for all 15 services.",
                 form_lbl_name: "Your Name *",
                 form_lbl_phone: "Mobile Number *",
                 form_lbl_service: "Service Needed *",
@@ -633,6 +1036,35 @@
         const mMenu = document.getElementById('mobileMenu');
         mBtn.addEventListener('click', () => mMenu.classList.toggle('hidden'));
         document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', () => mMenu.classList.add('hidden')));
+
+        // Cost Estimator
+        const sSelect = document.getElementById('calcService');
+        const scSelect = document.getElementById('calcScope');
+        const mCheck = document.getElementById('calcMaterial');
+        const pDisp = document.getElementById('estimatedPriceDisplay');
+
+        function calcPrice() {
+            const base = parseFloat(sSelect.options[sSelect.selectedIndex].getAttribute('data-base') || 1000);
+            const mult = parseFloat(scSelect.options[scSelect.selectedIndex].getAttribute('data-mult') || 1.0);
+            const mat =const mult = parseFloat(scSelect.options[scSelect.selectedIndex].getAttribute('data-mult') || 1.0);
+            const mat = mCheck.checked ? 1.9 : 1.0;
+            const minV = Math.round((base * mult * mat) / 100) * 100;
+            const maxV = Math.round((minV * 1.25) / 100) * 100;
+            pDisp.innerText = `₹ ${minV.toLocaleString('en-IN')} - ₹ ${maxV.toLocaleString('en-IN')}*`;
+        }
+        sSelect.addEventListener('change', calcPrice);
+        scSelect.addEventListener('change', calcPrice);
+        mCheck.addEventListener('change', calcPrice);
+        calcPrice();
+
+        function sendCalculatedQuoteToWhatsApp() {
+            const sName = sSelect.options[sSelect.selectedIndex].text;
+            const scName = scSelect.options[scSelect.selectedIndex].text;
+            const mat = mCheck.checked ? "Haan (With Material)" : "Nahi (Only Labor)";
+            const est = pDisp.innerText;
+            const text = `Hello Sunil ji, maine Savriya Seth Electrical website par estimate calculate kiya hai:%0A%0A⚡ *Service:* ${encodeURIComponent(sName)}%0A🏢 *Scope:* ${encodeURIComponent(scName)}%0A📦 *Material:* ${encodeURIComponent(mat)}%0A💰 *Estimated Range:* ${encodeURIComponent(est)}%0A%0AKripya site visit karke final quote dein.`;
+            window.open(`https://wa.me/917878515939?text=${text}`, '_blank');
+        }
 
         function handleBooking(e) {
             e.preventDefault();

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://sanwariyasethelectricalsarvice.github.io/sawriya-seth-electrical/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    
+    <!-- Google Image Search ke liye Posters -->
+    <image:image>
+      <image:loc>https://sanwariyasethelectricalsarvice.github.io/sawriya-seth-electrical/assets/banner.png</image:loc>
+      <image:title>Savriya Seth Electrical Service Banner - Sunil Rav</image:title>
+      <image:caption>Complete 15 Electrical and Home Fitting Services in Rajasthan</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sanwariyasethelectricalsarvice.github.io/sawriya-seth-electrical/assets/poster1.png</image:loc>
+      <image:title>Sunil Rav Electrician Service Card</image:title>
+      <image:caption>Single Phase, Three Phase, House Wiring and Profile Lights</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sanwariyasethelectricalsarvice.github.io/sawriya-seth-electrical/assets/poster2.png</image:loc>
+      <image:title>Savriya Seth Electrical Home Solutions Poster</image:title>
+      <image:caption>AC Installation, RO Service, Chimney and Plumbing Fittings</image:caption>
+    </image:image>
+  </url>
+</urlset>

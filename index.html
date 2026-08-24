@@ -110,17 +110,15 @@
                     <a href="#faq" class="hover:text-brand-gold transition" data-i18n="nav_faq">FAQ</a>
                 </nav>
 
-                <!-- Language Toggle & Direct Calls -->
-                <div class="flex items-center gap-3">
-                    <!-- 🌐 BILINGUAL TOGGLE -->
-                    <div class="flex items-center bg-slate-900 border border-brand-gold/40 rounded-full p-1 shadow-inner">
-                        <button onclick="setLanguage('hi')" id="langBtnHi" class="px-3 py-1 rounded-full text-xs font-bold transition-all bg-brand-gold text-slate-950 shadow-sm">
-                            🇮🇳 हिन्दी
-                        </button>
-                        <button onclick="setLanguage('en')" id="langBtnEn" class="px-3 py-1 rounded-full text-xs font-bold text-slate-400 hover:text-white transition-all">
-                            English
-                        </button>
-                    </div>
+             <!-- 🌐 HINDI / ENGLISH TOGGLE BUTTON -->
+<div style="display: inline-flex; align-items: center; background: #0f172a; border: 2px solid #f59e0b; border-radius: 9999px; padding: 3px; z-index: 999; position: relative;">
+    <button type="button" onclick="setLanguage('hi')" id="langBtnHi" style="padding: 5px 12px; border-radius: 9999px; font-size: 12px; font-weight: 800; cursor: pointer; border: none; background: #f59e0b; color: #000; transition: all 0.2s;">
+        🇮🇳 हिन्दी
+    </button>
+    <button type="button" onclick="setLanguage('en')" id="langBtnEn" style="padding: 5px 12px; border-radius: 9999px; font-size: 12px; font-weight: 800; cursor: pointer; border: none; background: transparent; color: #94a3b8; transition: all 0.2s;">
+        English
+    </button>
+</div>
 
                     <a href="tel:+917878515939" class="hidden sm:flex px-4 py-2 rounded-lg border border-brand-gold/40 bg-brand-gold/10 text-brand-gold font-bold text-sm items-center gap-2"><i class="fa-solid fa-phone"></i> 7878515939</a>
                     
